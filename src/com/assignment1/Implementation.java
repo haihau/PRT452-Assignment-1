@@ -53,7 +53,7 @@ public class Implementation implements Distance, Equation, Gradient {
             gradientValuey=y2-y1;
             gradientValue = (gradientValuey/gradientValuex);
  	    	 	    
-	        System.out.println("("+x1+","+y1+")and"+"("+x2+","+y2+") Gradient is ===>"+ +gradientValuey+ "/" + gradientValuex);
+	        System.out.println("("+x1+","+y1+")and"+"("+x2+","+y2+") Gradient is ===>"+ gradientValue);
 	        	   
 	        return gradientValue;
 	         
@@ -73,14 +73,15 @@ public class Implementation implements Distance, Equation, Gradient {
             equationValuey =y2-y1;
             equationValuexm = (y2-y1)/(x2-x1);
             equationValueb = y1-(x1*equationValuexm);
+            
  	    	if (equationValueb >0) {
  	    		 System.out.println("("+x1+","+y1+")and"+"("+x2+","+y2+")+ Equation is ===> y="
- 	    		        + equationValuey +"/" + equationValuex +"x+"+ equationValueb);
+ 	    		        + equationValuey/equationValuex +"x+"+ equationValueb);
  	    	}
  	    	
  	    	else {
  	    		 System.out.println("("+x1+","+y1+")and"+"("+x2+","+y2+")+ Equation is ===> y="
- 	    		        + equationValuey +"/" + equationValuex +"x"+ equationValueb);
+ 	    		        + equationValuey/equationValuex +"x"+ equationValueb);
  	    	}
  	    
 	          
